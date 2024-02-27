@@ -12,8 +12,8 @@
     --neutral-grayish-blue: hsl(210, 4%, 67%);
     --neutral-white: hsl(0, 0%, 100%);
 
-    --heading-font: font-family: 'Fraunces', serif;
-    --content-font: font-family: 'Barlow', sans-serif;
+    --heading-font: 'Fraunces', serif;
+    --content-font: 'Barlow', sans-serif;
 }
 
 /* resets and base styles */
@@ -36,4 +36,74 @@ body {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.landing {
+    height: 90vh;
+    background-image: url(../images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 40%;
+
+    padding: 3em;
+}
+
+/* header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 4rem;
+}
+
+nav .menu {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;    
+    color: var(--neutral-white);
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+nav a.active {
+    display: inline-block;
+    font-family: var(--heading-font);
+    color: black;
+    text-transform: uppercase;
+    background-color: var(--neutral-white);
+    padding: 1.8rem 3.5rem;
+    border-radius: 3rem;
+}
+
+main h1 {
+    margin: 1.3em auto;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 7.2rem;
+    color: var(--neutral-white);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 7px;
+}
+
+main img {
+    display: block;
+    margin: auto;
 }
