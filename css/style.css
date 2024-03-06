@@ -38,6 +38,11 @@ img {
     height: auto;
 }
 
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+/* landing page */
 .landing {
     height: 90vh;
     background-image: url(../images/desktop/image-header.jpg);
@@ -95,7 +100,6 @@ nav a.active {
 main h1 {
     margin: 1.3em auto;
     text-align: center;
-    font-family: var(--heading-font);
     font-size: 7.2rem;
     color: var(--neutral-white);
     text-transform: uppercase;
@@ -106,4 +110,97 @@ main h1 {
 main img {
     display: block;
     margin: auto;
+}
+
+/* services section */
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+}
+
+.services p, .services a {
+    font-weight: bold;
+}
+
+.services > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.services > div:nth-child(2) {
+    background-image: url('../images/desktop/image-transform.jpg');    
+}
+
+.services > div:nth-child(3) {
+    background-image: url('../images/desktop/image-stand-out.jpg');
+}
+
+.services > div:nth-child(5) {
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+    color: var(--primary-dark-desaturated-cyan);
+}
+
+.services > div:nth-child(6) {
+    background-image: url('../images/desktop/image-photography.jpg');
+    color: var(--primary-dark-blue);
+}
+
+.feature {
+    padding: 12em;
+}
+
+.feature h2 {
+    font-size: 4.8rem;
+}
+
+.feature p {
+    color: var(--neutral-dark-grayish-blue);
+    margin: 2em 0;
+}
+
+.more-cta {
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 0 6px;
+}
+
+.more-cta::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 7px;
+    border-radius: 10px;    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#brand-cta::after {
+    background: hsla(51, 100%, 49%, 0.3);
+}
+
+#audience-cta::after {
+    background: hsla(7, 99%, 70%, 0.3);
+}
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;    
+    padding: 9em;
+}
+
+.jobs h3 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 1em;
 }
