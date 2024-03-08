@@ -208,3 +208,47 @@ main img {
     text-transform: capitalize;
     margin-bottom: 1em;
 }
+
+/* testimonials section */
+.testimonials {
+    padding: 8em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.testimonials h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: var(--neutral-dark-grayish-blue);
+}
+
+.testimonies-wrapper {
+    margin-top: 5em;
+    display: flex;
+    gap: 5em;
+}
+
+.testimony img {
+    width: 8rem;
+    border-radius: 50%;
+}
+
+.client-comment {
+    margin: 3em 0 4em;
+    font-weight: bold;
+    color: var(--neutral-very-dark-grayish-blue);
+}
+
+.client-name {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+
+.client-role {
+    margin-top: 0.7em;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    color: var(--neutral-grayish-blue);
+}
