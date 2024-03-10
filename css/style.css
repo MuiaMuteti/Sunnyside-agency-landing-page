@@ -65,7 +65,7 @@ header {
     align-items: center;
 }
 
-.logo img {
+header .logo img {
     height: 3.5rem;
 }
 
@@ -80,7 +80,7 @@ nav ul {
     gap: 3em;
 }
 
-nav li {
+nav li, footer li {
     list-style: none;
 }
 
@@ -258,4 +258,41 @@ main img {
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+/* footer */
+footer {
+    background-color: #90d4c5;
+    text-align: center;
+    padding: 4em 8em;
+}
+
+footer .logo img {
+    height: 3.3rem;
+}
+
+.secondary-links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.secondary-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-dark-moderate-cyan);
+}
+
+.social-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 5em 0 3em 0;
+}
+
+.attribution, .attribution a {
+    color: var(--primary-dark-moderate-cyan);
 }
