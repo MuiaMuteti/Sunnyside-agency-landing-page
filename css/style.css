@@ -252,3 +252,10 @@ main img {
     font-size: 1.4rem;
     color: var(--neutral-grayish-blue);
 }
+
+/* gallery section */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
