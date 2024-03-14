@@ -309,7 +309,49 @@ footer .logo img {
 }
 
 @media only screen and (max-width: 950px) {
-    /* nav ul {
-        gap: 2em;
-    } */
+    header {
+        position: relative;
+    }
+
+    nav .menu {
+        display: inline-block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 2.5em;
+        padding: 2.5em 0;
+        background-color: #fff;
+        position: absolute;
+        top: 87px;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        transform-origin: top right;
+        transform: scale(0);
+        transition: all 500ms ease-in-out;
+    }
+
+    nav ul.menu-open {
+        transform: scale(1);
+    }
+
+    nav a {
+        color: var(--neutral-dark-grayish-blue);
+    }
+
+    nav a.active {
+        background-color: var(--primary-yellow);
+    }
+
+    nav ul::before {
+        position: absolute;
+        right: 0;
+        top: -30px;
+        content: '';
+        border-top: 30px solid transparent;
+        border-right: 30px solid #fff;
+        border-bottom: 30px solid #fff;
+        border-left: 30px solid transparent;
+    }
 }
