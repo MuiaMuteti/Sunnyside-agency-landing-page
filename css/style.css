@@ -91,7 +91,7 @@ nav a {
     font-weight: bold;
 }
 
-nav a.active {
+nav a.contact {
     display: inline-block;
     font-family: var(--heading-font);
     color: black;
@@ -99,6 +99,12 @@ nav a.active {
     background-color: var(--neutral-white);
     padding: 1.6rem 3.2rem;
     border-radius: 3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a.contact:hover {
+    background-color: #6eceff;
+    color: #fff;
 }
 
 main h1 {
@@ -182,14 +188,23 @@ main img {
     position: absolute;
     bottom: 0;
     left: 0;
+    transition: all 0.3s ease-in-out;
 }
 
 #brand-cta::after {
     background: hsla(51, 100%, 49%, 0.3);
 }
 
+#brand-cta:hover::after {
+    background: hsla(51, 100%, 49%, 0.6);
+}
+
 #audience-cta::after {
     background: hsla(7, 99%, 70%, 0.3);
+}
+
+#audience-cta:hover:after {
+    background: hsla(7, 99%, 70%, 0.6);
 }
 
 .jobs {
@@ -288,6 +303,18 @@ footer .logo img {
     margin: 5em 0 3em 0;
 }
 
+.secondary-links a, .social-links a {
+    transition: all 0.3s ease-in-out;
+}
+
+.secondary-links a:hover {
+    color: #fff;
+}
+
+.social-links a:hover {
+    filter: brightness(0) invert(1);
+}
+
 .attribution, .attribution a {
     color: var(--primary-dark-moderate-cyan);
 }
@@ -342,7 +369,7 @@ footer .logo img {
         color: var(--neutral-dark-grayish-blue);
     }
 
-    nav a.active {
+    nav a.contact {
         background-color: var(--primary-yellow);
     }
 
