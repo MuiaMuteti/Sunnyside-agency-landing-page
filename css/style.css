@@ -120,6 +120,16 @@ main h1 {
 main img {
     display: block;
     margin: auto;
+    animation: upDown 1s infinite alternate;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
 }
 
 /* services section */
